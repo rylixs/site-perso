@@ -10,6 +10,8 @@
     {{ encore_entry_script_tags('overview') }}
 {% endblock %}
 
+{% block title %}Charles Climent - Développeur web{% endblock %}
+
 {% block body %}
     <section>
         <div id="skybox">
@@ -18,21 +20,24 @@
             <div id="stars-3" data-depth=".8"></div>
         </div>
 
-        <div id="presentation">
-            <h1>Charles Climent</h1>
-            <h2 {{ stimulus_controller('symfony/ux-typed', {
+        <div id="presentation"
+             class="d-flex justify-content-center flex-column align-items-center position-absolute user-select-none top-0"
+        >
+            <h1 class="text-uppercase">Charles Climent</h1>
+            <p {{ stimulus_controller('symfony/ux-typed', {
                 strings: [
                     'Je suis curieux',
                     'Je suis passionné',
                     'Je suis débrouillard',
-                    'Je suis...',
-                    'Je suis développeur web.',
+                    'Je suis . . .',
+                    'Je suis ✨développeur web✨',
                 ],
                 smartBackspace: true,
                 startDelay: 100,
                 backSpeed: 20,
                 backDelay: 100,
-            }) }}></h2>
+                showCursor: false,
+            }) }}></p>
         </div>
 
         <div class="scroll-btn">
@@ -41,6 +46,39 @@
                     <span></span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="d-flex justify-content-center mb-5">
+            <h2>À propos de moi</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <article class="col-12 col-lg-6 text-justify">
+                <p class="mb-5">Initialement détenteur d'une certification professionnelle BAC+3 de "Technicien, Réalisateur/Monteur" décernée par <a href="https://www.acfamultimedia.com/" target="_blank" rel="noopener nofollow">ACFA Multimédia</a>, je me suis par la suite réorienté dans le domaine du développement web en suivant une formation accélérée avec l'organisme <a href="https://www.wf3.fr/" target="_blank" rel="noopener nofollow">WebForce3</a>.</p>
+
+                <p  class="mb-5">
+                    Cette formation m'a permis d'apprendre les bases de la conception simple d'un site web en PHP, en s'appuyant sur mes connaissances autodidactes.
+                    <br>
+                    Au bout de 3 mois d'apprentissage, j'ai pu accéder à un stage en entreprise qui m'a permis d'accéder à mon premier emploi en 2018 chez <a href="https://latitud.immo/" target="_blank" rel="noopener nofollow">Latitud</a> en tant que développeur full-stack Angular/Symfony.
+                </p>
+
+                <p class="mb-5">Depuis 2019, j'exerce le métier de développeur web back-end Symfony chez <a href="https://www.novaway.fr/" target="_blank" rel="noopener nofollow">Novaway</a>.</p>
+            </article>
+
+            <aside class="d-none d-lg-inline col-12 col-lg-4">
+                <div id="profil" class="d-flex justify-content-center align-items-center flex-column">
+                    <picture class="mb-2">
+                        <img src="{{ asset('images/charles.png') }}"
+                             alt="Photo de Charles"
+                             class="img-thumbnail shadow-sm"
+                             loading="lazy"
+                        >
+                    </picture>
+                    <p><span id="age"></span> ans | he/him | Lyon - France</p>
+                </div>
+            </aside>
         </div>
     </section>
 {% endblock %}
