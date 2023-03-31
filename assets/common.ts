@@ -1,3 +1,3 @@
 import './styles/common.scss';
 
-// import './bootstrap';
+import './bootstrap';

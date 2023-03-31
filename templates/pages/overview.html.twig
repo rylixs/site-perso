@@ -11,5 +11,36 @@
 {% endblock %}
 
 {% block body %}
-    TODO
+    <section>
+        <div id="skybox">
+            <div id="stars-1" data-depth=".4"></div>
+            <div id="stars-2" data-depth=".6"></div>
+            <div id="stars-3" data-depth=".8"></div>
+        </div>
+
+        <div id="presentation">
+            <h1>Charles Climent</h1>
+            <h2 {{ stimulus_controller('symfony/ux-typed', {
+                strings: [
+                    'Je suis curieux',
+                    'Je suis passionné',
+                    'Je suis débrouillard',
+                    'Je suis...',
+                    'Je suis développeur web.',
+                ],
+                smartBackspace: true,
+                startDelay: 100,
+                backSpeed: 20,
+                backDelay: 100,
+            }) }}></h2>
+        </div>
+
+        <div class="scroll-btn">
+            <div class="scroll-down">
+                <div class="mouse">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

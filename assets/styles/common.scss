@@ -1,0 +1,16 @@
+@import "bootstrap";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/Poppins-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url('../fonts/poppins/Poppins-SemiBold.otf') format('opentype');
+}
+
+body {
+  background: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+}
