@@ -1,5 +1,7 @@
-@use 'sass:math';
-@use 'sass:string';
+@use "sass:math";
+@use "sass:string";
+
+@use "common";
 
 @import "./components/mouse_scroll";
 
@@ -93,6 +95,18 @@ $stars: (
   picture {
     width: 15rem;
     height: 15rem;
+  }
+}
+
+#skills {
+  @each $type in ['warning', 'info', 'secondary'] {
+    .card.border-#{$type} {
+      cursor: default;
+
+      li:hover {
+        @extend .text-#{$type};
+      }
+    }
   }
 }
 
