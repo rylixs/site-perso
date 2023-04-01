@@ -1,5 +1,7 @@
 import './styles/overview.scss';
 
+import './common';
+
 import Parallax from 'parallax-js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

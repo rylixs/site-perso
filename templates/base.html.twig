@@ -3,19 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+              content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <meta name="description" content="Développeur spécialisé dans la conception de sites et solutions logicielles web, utilisant des technologies modernes telles que Symfony.">
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="description" content="{% block description %}{% endblock %}">
 
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('common') }}
-        {% endblock %}
-
-        {% block javascripts %}
-            {{ encore_entry_script_tags('common') }}
-        {% endblock %}
+        {% block stylesheets %}{% endblock %}
+        {% block javascripts %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
