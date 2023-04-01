@@ -9,6 +9,31 @@
         <title>{% block title %}{% endblock %}</title>
         <meta name="description" content="{% block description %}{% endblock %}">
 
+        <link rel="canonical" href="https://rylix.fr/">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/seo/favicon/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/seo/favicon/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/seo/favicon/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('images/seo/site.webmanifest') }}">
+        <link rel="mask-icon" href="{{ asset('images/seo/favicon/safari-pinned-tab.svg') }}" color="#5bbad5">
+        <link rel="shortcut icon" href="{{ asset('images/seo/favicon/favicon.ico') }}">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="{{ asset('images/seo/browserconfig.xml') }}">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{ block('title') }}">
+        <meta property="og:description" content="{{ block('description') }}">
+        <meta property="og:image" content="{{ asset('images/seo/favicon/apple-touch-icon.png') }}">
+        <meta property="og:url" content="https://rylix.fr/">
+        <meta property="og:site_name" content="{{ block('title') }}">
+
+        <meta name="twitter:title" content="{{ block('title') }}">
+        <meta name="twitter:description" content="{{ block('description') }}">
+        <meta name="twitter:image" content="{{ asset('images/seo/favicon/apple-touch-icon.png') }}">
+        <meta name="twitter:site" content="@_rylix">
+        <meta name="twitter:creator" content="@_rylix">
+
         {% block stylesheets %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </head>
