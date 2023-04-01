@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('overview') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('overview') }}
+{% endblock %}
+
+{% block title %}Charles Climent - Développeur web{% endblock %}
+
+{% block body %}
+    {% include 'pages/overview/includes/_introduction.html.twig' %}
+    {% include 'pages/overview/includes/_presentation.html.twig' %}
+    {% include 'pages/overview/includes/_skills.html.twig' %}
+{% endblock %}

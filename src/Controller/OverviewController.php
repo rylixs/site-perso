@@ -13,6 +13,6 @@ final class OverviewController extends AbstractController
     #[Route('/', name: 'app_overview')]
     public function index(): Response
     {
-        return $this->render('pages/overview.html.twig');
+        return $this->render('pages/overview/index.html.twig');
     }
 }

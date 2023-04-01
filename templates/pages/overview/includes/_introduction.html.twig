@@ -1,0 +1,35 @@
+<section>
+    <div id="skybox">
+        <div id="stars-1" data-depth=".4"></div>
+        <div id="stars-2" data-depth=".6"></div>
+        <div id="stars-3" data-depth=".8"></div>
+    </div>
+
+    <div id="presentation"
+         class="d-flex justify-content-center flex-column align-items-center position-absolute user-select-none top-0 text-is-bold"
+    >
+        <h1 class="text-uppercase">Charles Climent</h1>
+        <p {{ stimulus_controller('symfony/ux-typed', {
+            strings: [
+                'Je suis curieux',
+                'Je suis passionné',
+                'Je suis débrouillard',
+                'Je suis ...',
+                'Je suis ✨développeur web✨',
+            ],
+            smartBackspace: true,
+            startDelay: 100,
+            backSpeed: 20,
+            backDelay: 100,
+            showCursor: false,
+        }) }}></p>
+    </div>
+
+    <div class="scroll-btn">
+        <div class="scroll-down">
+            <div class="mouse">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</section>
