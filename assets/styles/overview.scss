@@ -98,7 +98,7 @@ $stars: (
   }
 }
 
-#skills {
+#skills, #misc {
   @each $type in ['warning', 'info', 'secondary'] {
     .card.border-#{$type} {
       cursor: default;
