@@ -21,7 +21,7 @@
         </div>
 
         <div id="presentation"
-             class="d-flex justify-content-center flex-column align-items-center position-absolute user-select-none top-0"
+             class="d-flex justify-content-center flex-column align-items-center position-absolute user-select-none top-0 text-is-bold"
         >
             <h1 class="text-uppercase">Charles Climent</h1>
             <p {{ stimulus_controller('symfony/ux-typed', {
@@ -29,7 +29,7 @@
                     'Je suis curieux',
                     'Je suis passionné',
                     'Je suis débrouillard',
-                    'Je suis . . .',
+                    'Je suis ...',
                     'Je suis ✨développeur web✨',
                 ],
                 smartBackspace: true,
@@ -50,24 +50,39 @@
     </section>
 
     <section class="container">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-5"
+             data-aos="fade-down"
+        >
             <h2>À propos de moi</h2>
         </div>
 
-        <div class="row justify-content-center">
-            <article class="col-12 col-lg-6 text-justify">
-                <p class="mb-5">Initialement détenteur d'une certification professionnelle BAC+3 de "Technicien, Réalisateur/Monteur" décernée par <a href="https://www.acfamultimedia.com/" target="_blank" rel="noopener nofollow">ACFA Multimédia</a>, je me suis par la suite réorienté dans le domaine du développement web en suivant une formation accélérée avec l'organisme <a href="https://www.wf3.fr/" target="_blank" rel="noopener nofollow">WebForce3</a>.</p>
-
-                <p  class="mb-5">
-                    Cette formation m'a permis d'apprendre les bases de la conception simple d'un site web en PHP, en s'appuyant sur mes connaissances autodidactes.
+        <div class="row justify-content-around">
+            <article class="col-12 col-lg-7 text-justify"
+                     data-aos="fade-right"
+                     data-aos-duration="1000"
+            >
+                <p class="mb-4">
+                    <span class="text-secondary">></span>
+                    Initialement détenteur d'une certification professionnelle BAC+3 de <span class="fst-italic">"Technicien, Réalisateur/Monteur"</span> décernée par <a href="https://www.acfamultimedia.com/" class="link-success" target="_blank" rel="noopener nofollow">ACFA Multimédia</a>, je me suis par la suite réorienté dans le domaine du développement web en suivant une formation accélérée avec l'organisme <a href="https://www.wf3.fr/" class="link-success" target="_blank" rel="noopener nofollow">WebForce3</a>.
                     <br>
-                    Au bout de 3 mois d'apprentissage, j'ai pu accéder à un stage en entreprise qui m'a permis d'accéder à mon premier emploi en 2018 chez <a href="https://latitud.immo/" target="_blank" rel="noopener nofollow">Latitud</a> en tant que développeur full-stack Angular/Symfony.
+                    Cette formation m'a permis d'apprendre les bases de la conception simple d'un site web en PHP, en s'appuyant sur mes connaissances autodidactes.
                 </p>
 
-                <p class="mb-5">Depuis 2019, j'exerce le métier de développeur web back-end Symfony chez <a href="https://www.novaway.fr/" target="_blank" rel="noopener nofollow">Novaway</a>.</p>
+                <p class="mb-4">
+                    <span class="text-secondary">></span>
+                    Au bout de 3 mois d'apprentissage, j'ai pu accéder à un stage en entreprise qui m'a permis d'accéder à mon premier emploi en 2018 chez <a href="https://latitud.immo/" class="link-success" target="_blank" rel="noopener nofollow">Latitud</a> en tant que <span class="text-is-bold">développeur full-stack <span class="text-danger">Angular</span>/<span class="text-dark">Symfony</span></span>.
+                </p>
+
+                <p class="mb-4">
+                    <span class="text-warning">></span>
+                    Depuis 2019, j'exerce le métier de <span class="text-is-bold">développeur web back-end <span class="text-dark">Symfony</span></span> chez <a href="https://www.novaway.fr/" class="link-success" target="_blank" rel="noopener nofollow">Novaway</a>.
+                </p>
             </article>
 
-            <aside class="d-none d-lg-inline col-12 col-lg-4">
+            <aside class="d-none d-lg-inline col-12 col-lg-3"
+                   data-aos="fade-left"
+                   data-aos-duration="1000"
+            >
                 <div id="profil" class="d-flex justify-content-center align-items-center flex-column">
                     <picture class="mb-2">
                         <img src="{{ asset('images/charles.png') }}"
@@ -76,7 +91,8 @@
                              loading="lazy"
                         >
                     </picture>
-                    <p><span id="age"></span> ans | he/him | Lyon - France</p>
+
+                    <p class="text-is-bold"><span id="age"></span> ans | he/him | Lyon - France</p>
                 </div>
             </aside>
         </div>

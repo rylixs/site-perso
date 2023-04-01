@@ -10,6 +10,10 @@
   src: url('../fonts/poppins/Poppins-SemiBold.otf') format('opentype');
 }
 
+.text-is-bold {
+  font-family: 'Poppins-bold', sans-serif;
+}
+
 body {
   background: #f5f5f5;
   font-family: 'Poppins', sans-serif;

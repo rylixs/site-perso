@@ -1,6 +1,8 @@
 import './styles/overview.scss';
 
 import Parallax from 'parallax-js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const getAge = (): string => {
     const birthday = new Date('1994-01-24');
@@ -26,3 +28,5 @@ const age = document.querySelector('#age') as HTMLElement | null;
 
 if (skybox) new Parallax(skybox);
 if (age) age.innerText = getAge();
+
+AOS.init();
