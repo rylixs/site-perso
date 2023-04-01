@@ -19,3 +19,11 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
+
+section.container:not(:last-of-type) {
+  margin-bottom: 15vh;
+
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 10vh;
+  }
+}
