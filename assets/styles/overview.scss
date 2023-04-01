@@ -60,7 +60,9 @@ $stars: (
     @if $i == 1 {
       filter: blur(1px);
     } @else if $i == 2 {
-      filter: blur(0.5px);
+      filter: blur(.5px);
+    } @else {
+      filter: blur(.5px);
     }
   }
 }
@@ -92,4 +94,8 @@ $stars: (
     width: 15rem;
     height: 15rem;
   }
+}
+
+section.container {
+  margin-bottom: 10vh;
 }
