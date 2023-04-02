@@ -8,63 +8,29 @@
 
     <div id="skills" class="row justify-content-center">
         <aside class="col-12 col-lg-4">
-            <div class="card border-warning shadow-sm"
-                 data-aos="fade-up"
-                 data-aos-delay="100"
-            >
-                <div class="card-body">
-                    <h5 class="card-title text-center text-is-bold text-uppercase mb-4">Front</h5>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="text-warning">></span>
-                            TypeScript / JavaScript
-                        </li>
-                        <li class="list-group-item">
-                            <span class="text-warning">></span>
-                            SASS / SCSS
-                        </li>
-                        <li class="list-group-item">
-                            <span class="text-warning">></span>
-                            Angular 2<sup>+</sup>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="text-warning">></span>
-                            Vue.js 2<sup>+</sup>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            {% include 'components/card_with_list.html.twig' with {
+                card_color: 'warning',
+                card_name: 'Front',
+                card_items: [
+                    'TypeScript / JavaScript',
+                    'SASS / SCSS',
+                    'Angular 2<sup>+</sup>',
+                    'Vue.js 2<sup>+</sup>',
+                ],
+            } %}
         </aside>
 
         <aside class="col-12 col-lg-4 mt-4 mt-lg-0">
-            <div class="card border-info shadow-sm"
-                 data-aos="fade-up"
-                 data-aos-delay="100"
-            >
-                <div class="card-body">
-                    <h5 class="card-title text-center text-is-bold text-uppercase mb-4">Back</h5>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="text-info">></span>
-                            PHP (POO / MVC)
-                        </li>
-                        <li class="list-group-item">
-                            <span class="text-info">></span>
-                            SQL (MySQL)
-                        </li>
-                        <li class="list-group-item">
-                            <span class="text-info">></span>
-                            Symfony 4<sup>+</sup>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="text-info">></span>
-                            ElasticSearch
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            {% include 'components/card_with_list.html.twig' with {
+                card_color: 'info',
+                card_name: 'Back',
+                card_items: [
+                    'PHP (POO / MVC)',
+                    'SQL (MySQL)',
+                    'Symfony 4<sup>+</sup>',
+                    'ElasticSearch',
+                ],
+            } %}
         </aside>
 
         <aside class="col-12 col-lg-8 mt-4">

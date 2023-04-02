@@ -1,0 +1,25 @@
+<div class="card focusable-card mb-3"
+     data-bs-toggle="modal"
+     data-bs-target="#{{ modal_target }}"
+>
+    <img src="{{ card_image }}"
+         alt="{{ card_title }}"
+         class="card-img-top"
+         loading="lazy"
+    >
+    <div class="card-body">
+        <h5 class="card-title text-is-bold">{{ card_title }}</h5>
+        <p class="card-text">
+            {{ card_text }}
+            <br>
+            <a href="#" class="pe-none">En savoir plus</a>
+        </p>
+        <p class="card-text">
+            <small class="text-secondary">{{ card_text_secondary }}</small>
+        </p>
+    </div>
+</div>
+
+{% include 'components/modal.html.twig' with {
+    modal_title: card_title,
+} %}

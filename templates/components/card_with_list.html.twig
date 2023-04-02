@@ -1,0 +1,17 @@
+<div class="card border-{{ card_color }} shadow-sm h-100"
+     data-aos="fade-up"
+     data-aos-delay="100"
+>
+    <div class="card-body">
+        <h5 class="card-title text-center text-is-bold text-uppercase mb-4">{{ card_name }}</h5>
+
+        <ul class="list-group list-group-flush">
+            {% for card_item in card_items %}
+                <li class="list-group-item">
+                    <span class="text-{{ card_color }}">></span>
+                    {{ card_item | raw }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
