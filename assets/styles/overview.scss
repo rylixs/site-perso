@@ -22,10 +22,10 @@
 }
 
 @function get-stars($number-of-stars) {
-  $value: 'calc(#{math.random() * 100}vw) calc(#{math.random() * 100}vw) #{var(--stars-box-shadow)}';
+  $value: 'calc(#{math.random() * 100}vw) calc(#{math.random() * 100}vh) #{var(--stars-box-shadow)}';
 
   @for $i from 2 through $number-of-stars {
-    $value: '#{$value}, calc(#{math.random() * 100}vw) calc(#{math.random() * 100}vw) #{var(--stars-box-shadow)}';
+    $value: '#{$value}, calc(#{math.random() * 100}vw) calc(#{math.random() * 100}vh) #{var(--stars-box-shadow)}';
   }
 
   @return string.unquote($value);
