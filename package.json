@@ -6,10 +6,9 @@
         "@symfony/stimulus-bridge": "^3.2.0",
         "@symfony/ux-typed": "file:vendor/symfony/ux-typed/assets",
         "@symfony/webpack-encore": "^4.0.0",
-        "@types/aos": "^3.0.4",
         "@types/bootstrap": "^5.2.6",
         "@types/parallax-js": "^3.1.0",
-        "aos": "^3.0.0-beta.6",
+        "animate.css": "^4.1.1",
         "bootstrap": "^5.2.3",
         "core-js": "^3.23.0",
         "parallax-js": "^3.1.0",
@@ -21,7 +20,8 @@
         "typescript": "^4.9.5",
         "webpack": "^5.74.0",
         "webpack-cli": "^4.10.0",
-        "webpack-notifier": "^1.15.0"
+        "webpack-notifier": "^1.15.0",
+        "wow.js": "^1.2.2"
     },
     "license": "UNLICENSED",
     "private": true,

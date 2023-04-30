@@ -3,8 +3,9 @@ import './styles/overview.scss';
 import './common';
 
 import Parallax from 'parallax-js';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// @ts-ignore
+import WOW from 'wow.js';
+import 'animate.css';
 
 const getAge = (): string => {
     const birthday = new Date('1994-01-24');
@@ -31,4 +32,4 @@ const age = document.querySelector('#age') as HTMLElement | null;
 if (skybox) new Parallax(skybox);
 if (age) age.innerText = getAge();
 
-AOS.init();
+new WOW().init();
