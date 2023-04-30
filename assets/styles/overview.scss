@@ -21,13 +21,11 @@
   }
 }
 
-$skybox-size: 2000;
-
 @function get-stars($number-of-stars) {
-  $value: '#{math.random($skybox-size)}px #{math.random($skybox-size)}px #{var(--stars-box-shadow)}';
+  $value: 'calc(#{math.random() * 100}vw) calc(#{math.random() * 100}vw) #{var(--stars-box-shadow)}';
 
   @for $i from 2 through $number-of-stars {
-    $value: '#{$value}, #{math.random($skybox-size)}px #{math.random($skybox-size)}px #{var(--stars-box-shadow)}';
+    $value: '#{$value}, calc(#{math.random() * 100}vw) calc(#{math.random() * 100}vw) #{var(--stars-box-shadow)}';
   }
 
   @return string.unquote($value);
@@ -50,7 +48,7 @@ $stars: (
   #stars-#{$i} {
     height: #{$i}px;
     width: #{$i}px;
-    box-shadow: map-get($stars, $i);
+    box-shadow: inset map-get($stars, $i);
     z-index: 1;
 
     animation-name: twinkling-stars;
