@@ -32,7 +32,7 @@
 }
 
 $stars: (
-    1: get-stars(700),
+    1: get-stars(500),
     2: get-stars(200),
     3: get-stars(100),
 );
@@ -56,14 +56,6 @@ $stars: (
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-delay: #{$i * .5}s;
-
-    @if $i == 1 {
-      filter: blur(1px);
-    } @else if $i == 2 {
-      filter: blur(.5px);
-    } @else {
-      filter: blur(.5px);
-    }
   }
 }
 
