@@ -32,9 +32,13 @@
 }
 
 $stars: (
-    1: get-stars(500),
-    2: get-stars(200),
-    3: get-stars(100),
+    'desktop-1': get-stars(500),
+    'desktop-2': get-stars(200),
+    'desktop-3': get-stars(100),
+
+    'mobile-1': get-stars(120),
+    'mobile-2': get-stars(50),
+    'mobile-3': get-stars(10),
 );
 
 #skybox {
@@ -48,7 +52,7 @@ $stars: (
   #stars-#{$i} {
     height: #{$i}px;
     width: #{$i}px;
-    box-shadow: inset map-get($stars, $i);
+    box-shadow: inset map-get($stars, 'desktop-' + $i);
     z-index: 1;
 
     animation-name: twinkling-stars;
@@ -56,6 +60,10 @@ $stars: (
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-delay: #{$i * .5}s;
+
+    @media (max-width: 768px) {
+      box-shadow: inset map-get($stars, 'mobile-' + $i);
+    }
   }
 }
 
