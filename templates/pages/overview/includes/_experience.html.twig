@@ -3,28 +3,67 @@
         <h2 class="text-center">Mes expériences</h2>
     </div>
 
-    <div class="row justify-content-center">
-        <aside class="col-12 col-lg-4 wow animate__fadeInLeft">
+    <div class="row justify-content-center overflow-hidden">
+        <aside class="col-12 col-lg-8 wow animate__fadeInUp">
             {% set modal_body %}
-                <p>
-                    Formation de développement web se déroulant sur 3 mois.
-                    <br>
-                    Apprentissages des bases de la conception d'un site web de A à Z, sur les langages et technologies JavaScript / PHP / MySQL.
-                </p>
-
-                <p>Projet de fin de formation : développement d'un CMS permettant la réalisation de site vitrine et e-commerce en Symfony en 5 jours en groupe de 3 personnes.</p>
+                <p>Beaucoup trop de choses en vrai, mais il faudra bien faire ce contenu un jour.</p>
             {% endset %}
 
             {% include 'components/card_with_modale.html.twig' with {
-                modal_target: 'js-modal-webforce3',
-                card_image: asset('images/webforce3.jpg'),
-                card_title: 'WebForce3 (formation)',
-                card_text: 'Formation au développement web',
-                card_text_secondary: 'Septembre 2017 - Février 2018',
+                modal_target: 'js-modal-novaway',
+                card_image: asset('images/novaway.jpg'),
+                card_title: 'Novaway',
+                card_text: 'Conception de sites et application web',
+                card_text_secondary: 'Depuis Novembre 2019',
+            } %}
+        </aside>
+    </div>
+
+    <div class="row justify-content-center">
+        <aside class="col-12 col-lg-4 wow animate__fadeInLeft">
+            {% set modal_body %}
+                <p>Conception d'un CMS complet et dynamique avec prévisualisation en temps réel, avec le framework Angular pour le front et Symfony pour l'API.</p>
+
+                <ul>
+                    <li>Création poussée de pages et articles, optimisées en SEO</li>
+                    <li>Médiathèque avancée avec transfert de fichiers lourds en "chunk"</li>
+                    <li>Gestion fine des rôles, utilisateurs et leurs permissions</li>
+                    <li>Création dynamique de formulaires et contraintes de validation personnalisables</li>
+                    <li>Administration des informations du site web, écriture du fichier robot.txt, modification de toutes les balises meta, ...</li>
+                    <li>Création et modification d'offres d'emploi et d'annonces immobilières</li>
+                    <li>Génération de menus sur 3 niveaux différents avec aperçu en temps réel</li>
+                    <li>Recherche avancée à l'aide d'ElasticSearch</li>
+                    <li>Import et export de données depuis diverses sources externes</li>
+                    <li>...</li>
+                </ul>
+            {% endset %}
+
+            {% include 'components/card_with_modale.html.twig' with {
+                modal_target: 'js-modal-latitud',
+                card_image: asset('images/latitud.jpg'),
+                card_title: 'Latitud',
+                card_text: 'Développement de solutions web',
+                card_text_secondary: 'Décembre 2018 - Octobre 2019',
             } %}
         </aside>
 
         <aside class="col-12 col-lg-4 wow animate__fadeInRight">
+            {% set modal_body %}
+                <p>Première expérience professionnelle, maintenance de divers projets en Symfony encadré par des lead developpers.</p>
+            {% endset %}
+
+            {% include 'components/card_with_modale.html.twig' with {
+                modal_target: 'js-modal-intuitivtechnology',
+                card_image: asset('images/intuitivtechnology.jpg'),
+                card_title: 'Intuitiv Technology',
+                card_text: 'Maintenance de projets',
+                card_text_secondary: 'Septembre 2018 - Décembre 2018',
+            } %}
+        </aside>
+    </div>
+
+    <div class="row justify-content-center">
+        <aside class="col-12 col-lg-4 wow animate__fadeInLeft">
             {% set modal_body %}
                 <p>Stage réalisé au sein du groupe SURA, développement du site de l'entreprise aux côtés d'un autre développeur/intégrateur.</p>
 
@@ -57,63 +96,24 @@
                 card_text_secondary: 'Avril 2018 - Septembre 2018',
             } %}
         </aside>
-    </div>
-
-    <div class="row justify-content-center">
-        <aside class="col-12 col-lg-4 wow animate__fadeInLeft">
-            {% set modal_body %}
-                <p>Première expérience professionnelle, maintenance de divers projets en Symfony encadré par des lead developpers.</p>
-            {% endset %}
-
-            {% include 'components/card_with_modale.html.twig' with {
-                modal_target: 'js-modal-intuitivtechnology',
-                card_image: asset('images/intuitivtechnology.jpg'),
-                card_title: 'Intuitiv Technology',
-                card_text: 'Maintenance de projets',
-                card_text_secondary: 'Septembre 2018 - Décembre 2018',
-            } %}
-        </aside>
 
         <aside class="col-12 col-lg-4 wow animate__fadeInRight">
             {% set modal_body %}
-                <p>Conception d'un CMS complet et dynamique avec prévisualisation en temps réel, avec le framework Angular pour le front et Symfony pour l'API.</p>
+                <p>
+                    Formation de développement web se déroulant sur 3 mois.
+                    <br>
+                    Apprentissages des bases de la conception d'un site web de A à Z, sur les langages et technologies JavaScript / PHP / MySQL.
+                </p>
 
-                <ul>
-                    <li>Création poussée de pages et articles, optimisées en SEO</li>
-                    <li>Médiathèque avancée avec transfert de fichiers lourds en "chunk"</li>
-                    <li>Gestion fine des rôles, utilisateurs et leurs permissions</li>
-                    <li>Création dynamique de formulaires et contraintes de validation personnalisables</li>
-                    <li>Administration des informations du site web, écriture du fichier robot.txt, modification de toutes les balises meta, ...</li>
-                    <li>Création et modification d'offres d'emploi et d'annonces immobilières</li>
-                    <li>Génération de menus sur 3 niveaux différents avec aperçu en temps réel</li>
-                    <li>Recherche avancée à l'aide d'ElasticSearch</li>
-                    <li>Import et export de données depuis diverses sources externes</li>
-                    <li>...</li>
-                </ul>
+                <p>Projet de fin de formation : développement d'un CMS permettant la réalisation de site vitrine et e-commerce en Symfony en 5 jours en groupe de 3 personnes.</p>
             {% endset %}
 
             {% include 'components/card_with_modale.html.twig' with {
-                modal_target: 'js-modal-latitud',
-                card_image: asset('images/latitud.jpg'),
-                card_title: 'Latitud',
-                card_text: 'Développement de solutions web',
-                card_text_secondary: 'Décembre 2018 - Octobre 2019',
-            } %}
-        </aside>
-    </div>
-
-    <div class="row justify-content-center overflow-hidden">
-        <aside class="col-12 col-lg-8 wow animate__fadeInUp">
-            {% set modal_body %}
-                <p>Beaucoup trop de choses en vrai, mais il faudra bien faire ce contenu un jour.</p>
-            {% endset %}
-
-            {% include 'components/card_with_modale.html.twig' with {
-                modal_target: 'js-modal-novaway',
-                card_image: asset('images/novaway.jpg'),
-                card_title: 'Novaway',
-                card_text: 'Conception de sites et application web',
-                card_text_secondary: 'Depuis Novembre 2019',
+                modal_target: 'js-modal-webforce3',
+                card_image: asset('images/webforce3.jpg'),
+                card_title: 'WebForce3 (formation)',
+                card_text: 'Formation au développement web',
+                card_text_secondary: 'Septembre 2017 - Février 2018',
             } %}
         </aside>
     </div>
