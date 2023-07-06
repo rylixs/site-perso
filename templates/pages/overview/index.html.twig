@@ -8,6 +8,7 @@
 {% block javascripts %}
     {{ parent() }}
     {{ encore_entry_script_tags('overview') }}
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 {% endblock %}
 
 {% block title %}Charles Climent - Développeur web{% endblock %}
@@ -19,4 +20,5 @@
     {% include 'pages/overview/includes/_skills.html.twig' %}
     {% include 'pages/overview/includes/_experience.html.twig' %}
     {% include 'pages/overview/includes/_misc.html.twig' %}
+    {% include 'pages/overview/includes/_contact.html.twig' %}
 {% endblock %}
