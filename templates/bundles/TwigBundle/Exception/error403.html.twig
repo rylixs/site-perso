@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('error403') }}
+{% endblock %}
+
+{% block title %}ERREUR 403{% endblock %}
+
+{% block body %}
+    <div id="skybox">
+        <div id="stars-1" data-depth=".4"></div>
+        <div id="stars-2" data-depth=".6"></div>
+        <div id="stars-3" data-depth=".8"></div>
+    </div>
+
+    <section class="position-absolute h-100 w-100 top-0 d-flex flex-column justify-content-center align-items-center">
+        <h1>{{ block('title') }}</h1>
+        <h6>Il semblerait que vous n'ayez pas la permission d'accéder à cette page...</h6>
+    </section>
+
+    {% include 'pages/error/includes/_redirection.html.twig' %}
+{% endblock %}

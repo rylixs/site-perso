@@ -6,8 +6,8 @@
               content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>{% block title %}{% endblock %}</title>
-        <meta name="description" content="{% block description %}{% endblock %}">
+        <title>{% block title %}Charles Climent - Développeur web back-end{% endblock %}</title>
+        <meta name="description" content="{% block description %}Développeur spécialisé dans la conception de sites et solutions logicielles web, utilisant des technologies modernes telles que Symfony.{% endblock %}">
 
         <link rel="canonical" href="https://rylix.fr/">
 
@@ -49,10 +49,10 @@
         {% block javascripts %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-
-        <section class="container">
-            <p class="text-center text-is-bold">Retrouvez le code source de ce site sur <a href="https://github.com/rylixs/site-perso" title="Mon Github" target="_blank" rel="noopener nofollow">mon Github</a> !</p>
-        </section>
+        {% block body %}
+            <section class="container">
+                <p class="text-center text-is-bold">Retrouvez le code source de ce site sur <a href="https://github.com/rylixs/site-perso" title="Mon Github" target="_blank" rel="noopener nofollow">mon Github</a> !</p>
+            </section>
+        {% endblock %}
     </body>
 </html>

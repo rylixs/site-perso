@@ -22,6 +22,10 @@ Encore
      */
     .addEntry('overview', './assets/overview.ts')
 
+    .addStyleEntry('error403', './assets/styles/error403.scss')
+    .addStyleEntry('error404', './assets/styles/error404.scss')
+    .addStyleEntry('error', './assets/styles/error.scss')
+
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
 

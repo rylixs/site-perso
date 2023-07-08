@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('error404') }}
+{% endblock %}
+
+{% block title %}ERREUR 404{% endblock %}
+
+{% block body %}
+    <div id="skybox">
+        <div id="stars-1" data-depth=".4"></div>
+        <div id="stars-2" data-depth=".6"></div>
+        <div id="stars-3" data-depth=".8"></div>
+    </div>
+
+    <section class="position-absolute h-100 w-100 top-0 d-flex flex-column justify-content-center align-items-center">
+        <h1>{{ block('title') }}</h1>
+        <h6>La page que vous essayez d'afficher n'existe pas 🤷</h6>
+    </section>
+
+    {% include 'pages/error/includes/_redirection.html.twig' %}
+{% endblock %}

@@ -11,9 +11,6 @@
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 {% endblock %}
 
-{% block title %}Charles Climent - Développeur web back-end{% endblock %}
-{% block description %}Développeur spécialisé dans la conception de sites et solutions logicielles web, utilisant des technologies modernes telles que Symfony.{% endblock %}
-
 {% block body %}
     {% include 'pages/overview/includes/_introduction.html.twig' %}
     {% include 'pages/overview/includes/_presentation.html.twig' %}
@@ -21,4 +18,6 @@
     {% include 'pages/overview/includes/_experience.html.twig' %}
     {% include 'pages/overview/includes/_misc.html.twig' %}
     {% include 'pages/overview/includes/_contact.html.twig' %}
+
+    {{ parent() }}
 {% endblock %}
