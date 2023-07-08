@@ -36,6 +36,8 @@ DirectoryIndex index.php
     Options +FollowSymlinks
 
     RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^www.rylix.fr
+    RewriteRule (.*) https://rylix.fr/$1 [R=301,L]
 
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the
