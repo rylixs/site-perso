@@ -5,17 +5,20 @@
 $skybox_background_lightest_color: #ce4257 !default;
 $skybox_background_darkest_color: #4f000b !default;
 
-$skybox_height: 100vh;
-$skybox_background: radial-gradient(
-  ellipse at bottom,
-  $skybox_background_lightest_color 0,
-  $skybox_background_darkest_color 100%
+@use "./components/skybox" with (
+  $skybox_height: 100vh,
+  $skybox_box-shadow: none,
+  $skybox_background: radial-gradient(
+    ellipse at bottom,
+    $skybox_background_lightest_color 0,
+    $skybox_background_darkest_color 100%
+  ),
 );
-$skybox_box-shadow: none;
-
-@import "./components/skybox";
 
 section {
+  text-align: center;
+  padding: 0 1rem;
+
   @if (color.lightness($skybox_background_lightest_color) > 70) {
     color: #090a0f;
     text-shadow: #f5f5f5 2px 0 10px;
