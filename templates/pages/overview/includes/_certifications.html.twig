@@ -1,0 +1,24 @@
+<section class="container">
+    <div class="d-flex justify-content-center mb-5 wow animate__fadeInDown">
+        <h2 class="text-center">Mes certifications</h2>
+    </div>
+
+    <div class="row justify-content-center overflow-hidden">
+        <aside class="col-12 col-lg-4 wow animate__fadeInUp">
+            {% set modal_body %}
+                <iframe src="{{ asset('documents/certification-symfony.pdf') }}#toolbar=0"
+                        width="100%"
+                        height="500px"
+                ></iframe>
+            {% endset %}
+
+            {% include 'components/card_with_modale.html.twig' with {
+                modal_target: 'js-modal-certification-sf6',
+                card_image: asset('images/certification-symfony.png'),
+                card_title: 'Certification Symfony 6',
+                card_text: 'Niveau "expert", décernée par SensioLabs',
+                card_action_label: 'Voir le certificat',
+            } %}
+        </aside>
+    </div>
+</section>
