@@ -8,27 +8,27 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "symfony/apache-pack": "^1.0",
-        "symfony/console": "6.3.*",
-        "symfony/dotenv": "6.3.*",
+        "symfony/console": "6.4.*",
+        "symfony/dotenv": "6.4.*",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "6.3.*",
-        "symfony/runtime": "6.3.*",
-        "symfony/twig-bundle": "6.3.*",
+        "symfony/framework-bundle": "6.4.*",
+        "symfony/runtime": "6.4.*",
+        "symfony/twig-bundle": "6.4.*",
         "symfony/ux-typed": "^2.7",
-        "symfony/web-link": "6.3.*",
+        "symfony/web-link": "6.4.*",
         "symfony/webpack-encore-bundle": "^1.16",
-        "symfony/yaml": "6.3.*",
+        "symfony/yaml": "6.4.*",
         "twig/extra-bundle": "^3.0",
         "twig/twig": "^3.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.21",
-        "rector/rector": "^0.17.2",
+        "rector/rector": "^0.18",
         "roave/security-advisories": "dev-latest",
-        "symfony/debug-bundle": "6.3.*",
+        "symfony/debug-bundle": "6.4.*",
         "symfony/maker-bundle": "^1.48",
-        "symfony/stopwatch": "6.3.*",
-        "symfony/web-profiler-bundle": "6.3.*"
+        "symfony/stopwatch": "6.4.*",
+        "symfony/web-profiler-bundle": "6.4.*"
     },
     "config": {
         "allow-plugins": {
@@ -74,8 +74,8 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "require": "6.3.*"
+            "allow-contrib": true,
+            "require": "6.4.*"
         }
     }
 }
