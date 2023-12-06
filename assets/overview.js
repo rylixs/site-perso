@@ -1,13 +1,12 @@
 import './styles/overview.scss';
 
-import './common';
+import './common.js';
 
 import Parallax from 'parallax-js';
-// @ts-ignore
 import WOW from 'wow.js';
 import 'animate.css';
 
-const getAge = (): string => {
+const getAge = () => {
     const birthday = new Date('1994-01-24');
     const now = new Date();
 
@@ -26,9 +25,9 @@ const getAge = (): string => {
     return age.toString();
 }
 
-const skybox = document.querySelector('#skybox') as HTMLElement | null;
-const age = document.querySelector('#age') as HTMLElement | null;
-const contactContainer = document.querySelector('#contact') as HTMLDivElement | null;
+const skybox = document.querySelector('#skybox');
+const age = document.querySelector('#age');
+const contactContainer = document.querySelector('#contact');
 
 if (skybox) new Parallax(skybox);
 if (age) age.innerText = getAge();

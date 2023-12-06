@@ -1,4 +1,4 @@
-@use "common";
+@import "./common";
 
 @import "./components/mouse_scroll";
 @import "./components/skybox";
@@ -38,7 +38,7 @@
       cursor: default;
 
       li:hover {
-        @extend .text-#{$type};
+        @extend .text-#{$type} !optional;
       }
     }
   }

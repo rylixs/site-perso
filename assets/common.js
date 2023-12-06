@@ -2,4 +2,4 @@
 import 'bootstrap';
 
 // Stimulus
-import './bootstrap';
+import './stimulus.js';

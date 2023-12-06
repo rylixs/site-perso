@@ -1,8 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    {{ encore_entry_link_tags('error403') }}
+    <link rel="stylesheet" href="{{ asset('styles/error403.scss') }}">
 {% endblock %}
 
 {% block title %}ERREUR 403{% endblock %}

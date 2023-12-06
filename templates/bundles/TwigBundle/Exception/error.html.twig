@@ -1,8 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    {{ parent() }}
-    {{ encore_entry_link_tags('error') }}
+    <link rel="stylesheet" href="{{ asset('styles/error.scss') }}">
 {% endblock %}
 
 {% block title %}Une erreur pas super cool s'est produite.{% endblock %}

@@ -1,0 +1,6 @@
+symfonycasts_sass:
+    root_sass:
+        - '%kernel.project_dir%/assets/styles/overview.scss'
+        - '%kernel.project_dir%/assets/styles/error.scss'
+        - '%kernel.project_dir%/assets/styles/error403.scss'
+        - '%kernel.project_dir%/assets/styles/error404.scss'
