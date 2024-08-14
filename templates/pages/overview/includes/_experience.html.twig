@@ -4,9 +4,25 @@
     </div>
 
     <div class="row justify-content-center overflow-hidden">
-        <aside class="col-12 col-lg-8 wow animate__fadeInUp">
+        <aside class="col-12 col-lg-4 wow animate__fadeInLeft">
             {% set modal_body %}
-                <p>Beaucoup trop de choses en vrai, mais il faudra bien faire ce contenu un jour.</p>
+                <i>En cours de construction...</i>
+            {% endset %}
+
+            {% include 'components/card_with_modale.html.twig' with {
+                modal_target: 'js-modal-nomad',
+                card_image: asset('images/nomad.webp'),
+                card_title: 'Nomad',
+                card_text: 'Responsable développement API',
+                card_text_secondary: 'Depuis Février 2024',
+            } %}
+        </aside>
+
+        <aside class="col-12 col-lg-4 wow animate__fadeInRight">
+            {% set modal_body %}
+                <p>Réalisation et maintenance de nombreux sites et applications web pour différents clients, répondant à diverses problématiques métier.</p>
+
+                <p>ERP, intranets et extranets, e-commerces, API, PWA, outils métiers...</p>
             {% endset %}
 
             {% include 'components/card_with_modale.html.twig' with {
@@ -14,7 +30,7 @@
                 card_image: asset('images/novaway.webp'),
                 card_title: 'Novaway',
                 card_text: 'Conception de sites et application web',
-                card_text_secondary: 'Depuis Novembre 2019',
+                card_text_secondary: 'Novembre 2019 - Janvier 2024',
             } %}
         </aside>
     </div>
