@@ -1,8 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% block importmap %}
+    {{ importmap('overview') }}
+{% endblock %}
+
 {% block javascripts %}
     {{ parent() }}
-    {{ importmap('overview') }}
+
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 {% endblock %}
 
